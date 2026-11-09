@@ -1,6 +1,7 @@
 //tsconfig.json is the configuration file for the TypeScript compiler
 {
     "compilerOptions": {
+      // TypeScript compiler settings
     "module": "commonjs",
     "target": "ES2021",
     "declaration": false,
