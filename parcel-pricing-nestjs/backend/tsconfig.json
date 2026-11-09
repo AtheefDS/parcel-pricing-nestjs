@@ -25,9 +25,13 @@
     "outDir": "./dist",
     //We need to tell TypeScript where our original source code is located
     "rootDir": "./src",
-    
+    //We want TypeScript to save information about previous compilations.
+  //When we compile again, TypeScript can reuse this information instead of checking everything from scratch.
+  //This can improve compilation speed.
     "incremental": true,
+    //Our application uses external libraries.
     "skipLibCheck": true,
+    //We want TypeScript to check our code carefully and identify possible mistakes.
     "strict": true,
     "strictPropertyInitialization": false
   },
