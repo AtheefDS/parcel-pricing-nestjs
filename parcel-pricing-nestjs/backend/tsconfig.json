@@ -23,6 +23,7 @@
     "sourceMap": true,
     //We need to tell TypeScript where to save the generated JavaScript files
     "outDir": "./dist",
+    //We need to tell TypeScript where our original source code is located
     "rootDir": "./src",
     
     "incremental": true,
