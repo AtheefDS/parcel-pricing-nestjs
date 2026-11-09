@@ -12,6 +12,7 @@
     "removeComments": true,
     //NestJS uses decorators and metadata to understand classes and their dependencies
     "emitDecoratorMetadata": true,
+    //NestJS uses decorators extensively.
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
