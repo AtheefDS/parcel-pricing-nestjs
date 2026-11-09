@@ -14,8 +14,10 @@
     "emitDecoratorMetadata": true,
     //NestJS uses decorators extensively.
     "experimentalDecorators": true,
-    //Sometimes JavaScript libraries do not provide a default export, but TypeScript allows you to write a default import from them with this option.
+    //Sometimes JavaScript libraries do not provide a default export, but TypeScript allows you to write
+    //  a default import from them with this option.
     "allowSyntheticDefaultImports": true,
+    //It improves compatibility between CommonJS modules and ES Module-style imports.
     "esModuleInterop": true,
     "sourceMap": true,
     "outDir": "./dist",
