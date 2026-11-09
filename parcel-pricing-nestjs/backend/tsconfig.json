@@ -6,6 +6,7 @@
     "module": "commonjs",
     //We need to tell TypeScript which JavaScript version to generate
     "target": "ES2021",
+    //These files contain type information about your code.
     "declaration": false,
     "removeComments": true,
     "emitDecoratorMetadata": true,
