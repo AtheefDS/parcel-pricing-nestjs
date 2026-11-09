@@ -1,3 +1,4 @@
+//tsconfig.json is the configuration file for the TypeScript compiler
 {
   "compilerOptions": {
     "module": "commonjs",
