@@ -33,6 +33,7 @@
     "skipLibCheck": true,
     //We want TypeScript to check our code carefully and identify possible mistakes.
     "strict": true,
+    //When using classes, TypeScript checks whether class properties receive values during initialization.
     "strictPropertyInitialization": false
   },
   "include": ["src/**/*"]
