@@ -8,6 +8,7 @@
     "target": "ES2021",
     //These files contain type information about your code.
     "declaration": false,
+    //Sometimes we write comments to explain our code.
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
