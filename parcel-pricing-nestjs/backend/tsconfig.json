@@ -10,6 +10,7 @@
     "declaration": false,
     //Sometimes we write comments to explain our code.
     "removeComments": true,
+    //NestJS uses decorators and metadata to understand classes and their dependencies
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
