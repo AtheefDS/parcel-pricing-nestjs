@@ -2,6 +2,7 @@
 {
     "compilerOptions": {
       // TypeScript compiler settings
+      //We need to tell TypeScript which JavaScript module system to use when generating JavaScript.
     "module": "commonjs",
     "target": "ES2021",
     "declaration": false,
