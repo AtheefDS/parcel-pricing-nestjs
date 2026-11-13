@@ -1,16 +1,53 @@
 
+/* ============================================
+   1. UNIVERSAL SELECTOR
+   ============================================ */
+
+/* Reason: Selects every HTML element on the webpage. */
 * {
+
+  /* Reason: Includes padding and border inside an element's declared width and height.
+     Purpose: Prevents elements from becoming wider than their specified dimensions. */
   box-sizing: border-box;
+
 }
 
+
+/* ============================================
+   2. BODY SECTION
+   ============================================ */
+
+/* Reason: Selects the body element of the HTML document.
+   Purpose: Applies common styles to the entire webpage. */
 body {
+
+  /* Reason: Removes the browser's default margin around the body.
+     Purpose: Allows the webpage content to start from the edges of the screen. */
   margin: 0;
+
+  /* Reason: Sets Arial as the primary font.
+     Purpose: Uses Helvetica if Arial is unavailable, and sans-serif as the final fallback. */
   font-family: Arial, Helvetica, sans-serif;
+
+  /* Reason: Sets a light blue-grey background color for the webpage.
+     Purpose: Gives the application a clean background appearance. */
   background: #f3f6fb;
+
 }
 
+
+/* ============================================
+   3. COMMON FONT FOR FORM ELEMENTS
+   ============================================ */
+
+/* Reason: Selects all buttons, input fields and dropdown elements.
+   Purpose: Applies the same font style to all form controls. */
 button,
 input,
 select {
+
+  /* Reason: Inherits the font family from the parent element (body).
+     Purpose: Ensures buttons, inputs and dropdowns use the same font as the webpage. */
   font-family: inherit;
+
 }
