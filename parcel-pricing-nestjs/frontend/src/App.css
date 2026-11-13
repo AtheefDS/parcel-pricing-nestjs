@@ -1,164 +1,422 @@
 
+/* ================================
+   1. MAIN APPLICATION
+   ================================ */
+
+/* Reason: Selects the main application container. */
 .app {
+  /* Reason: Makes the application at least as tall as the browser screen. */
   min-height: 100vh;
+
+  /* Reason: Sets a light background color for the entire application. */
   background: #f3f6fb;
 }
 
+
+/* ================================
+   2. HEADER SECTION
+   ================================ */
+
+/* Reason: Selects the header section using its class name. */
 .header {
+  /* Reason: Gives the header a dark blue background. */
   background: #172554;
+
+  /* Reason: Changes all normal text inside the header to white. */
   color: white;
+
+  /* Reason: Aligns the header text horizontally to the center. */
   text-align: center;
+
+  /* Reason: Adds 35px space at the top and bottom, and 20px on the sides. */
   padding: 35px 20px;
 }
 
+/* Reason: Selects the h1 heading inside the header only. */
 .header h1 {
+  /* Reason: Removes the default margin and adds 10px space below the heading. */
   margin: 0 0 10px;
+
+  /* Reason: Sets the heading text size to 30 pixels. */
   font-size: 30px;
 }
 
+/* Reason: Selects the paragraph inside the header. */
 .header p {
+  /* Reason: Removes the browser's default paragraph margins. */
   margin: 0;
+
+  /* Reason: Gives the paragraph a light grey-blue text color. */
   color: #cbd5e1;
 }
 
+
+/* ================================
+   3. MAIN CONTAINER
+   ================================ */
+
+/* Reason: Selects the main container holding the form and result cards. */
 .container {
+  /* Reason: Sets the width to 900px maximum or 92% of the screen, whichever is smaller. */
   width: min(900px, 92%);
+
+  /* Reason: Centers the container horizontally and adds 35px top and bottom margin. */
   margin: 35px auto;
+
+  /* Reason: Uses CSS Grid to arrange the child elements in rows and columns. */
   display: grid;
+
+  /* Reason: Creates responsive columns, each at least 280px wide, when space allows. */
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  /* Reason: Adds 25px space between grid items. */
   gap: 25px;
+
+  /* Reason: Aligns grid items to the beginning instead of stretching their height. */
   align-items: start;
 }
 
+
+/* ================================
+   4. FORM AND RESULT CARDS
+   ================================ */
+
+/* Reason: Selects both the form card and result card using their class names. */
 .form-card,
 .result-card {
+  /* Reason: Gives both cards a white background. */
   background: white;
+
+  /* Reason: Adds 25px internal space between the card content and its border. */
   padding: 25px;
+
+  /* Reason: Rounds the card corners by 14px. */
   border-radius: 14px;
+
+  /* Reason: Adds a subtle shadow to make the cards look elevated. */
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
 }
 
+
+/* ================================
+   5. HEADINGS
+   ================================ */
+
+/* Reason: Selects all h2 headings in the application. */
 h2 {
+  /* Reason: Removes the default top margin of the heading. */
   margin-top: 0;
+
+  /* Reason: Changes heading text to dark blue. */
   color: #172554;
 }
 
+
+/* ================================
+   6. SUBTITLE
+   ================================ */
+
+/* Reason: Selects elements with the subtitle class. */
 .subtitle {
+  /* Reason: Gives the subtitle a grey-blue text color. */
   color: #64748b;
+
+  /* Reason: Adds 25px space below the subtitle. */
   margin-bottom: 25px;
 }
 
+
+/* ================================
+   7. FORM LABELS
+   ================================ */
+
+/* Reason: Selects all label elements in the application. */
 label {
+  /* Reason: Displays each label on a separate line. */
   display: block;
+
+  /* Reason: Makes the label text bold with a font weight of 600. */
   font-weight: 600;
+
+  /* Reason: Adds 17px top/bottom margin and 8px left/right margin. */
   margin: 17px 0 8px;
+
+  /* Reason: Changes label text to a dark grey-blue color. */
   color: #334155;
 }
 
+
+/* ================================
+   8. INPUT FIELDS AND SELECT BOXES
+   ================================ */
+
+/* Reason: Selects all input fields and dropdown select elements. */
 input,
 select {
+  /* Reason: Makes the input and dropdown occupy the full available width. */
   width: 100%;
+
+  /* Reason: Adds 12px internal space around the input text. */
   padding: 12px;
+
+  /* Reason: Creates a 1px solid light grey-blue border. */
   border: 1px solid #cbd5e1;
+
+  /* Reason: Rounds the corners of the input fields by 7px. */
   border-radius: 7px;
+
+  /* Reason: Sets the input text size to 15 pixels. */
   font-size: 15px;
+
+  /* Reason: Includes padding and border inside the declared width. */
   box-sizing: border-box;
+
+  /* Reason: Gives the input and dropdown a white background. */
   background: white;
 }
 
+
+/* ================================
+   9. INPUT FOCUS EFFECT
+   ================================ */
+
+/* Reason: Applies styles when a user clicks or focuses on an input or dropdown. */
 input:focus,
 select:focus {
+  /* Reason: Adds a light blue 2px outline to indicate the active field. */
   outline: 2px solid #93c5fd;
+
+  /* Reason: Changes the field border to blue when it is active. */
   border-color: #2563eb;
 }
 
+
+/* ================================
+   10. DIMENSION INPUT GRID
+   ================================ */
+
+/* Reason: Selects the container that holds length, width and height inputs. */
 .dimension-grid {
+  /* Reason: Uses CSS Grid to arrange the dimension inputs. */
   display: grid;
+
+  /* Reason: Creates three equal-width columns. */
   grid-template-columns: repeat(3, 1fr);
+
+  /* Reason: Adds 10px space between the three input fields. */
   gap: 10px;
 }
 
+/* Reason: Selects input elements inside the dimension grid. */
 .dimension-grid input {
+  /* Reason: Allows the input fields to shrink when necessary instead of overflowing. */
   min-width: 0;
 }
 
+
+/* ================================
+   11. BUTTON
+   ================================ */
+
+/* Reason: Selects all button elements in the application. */
 button {
+  /* Reason: Makes the button occupy the full available width. */
   width: 100%;
+
+  /* Reason: Adds 13px internal vertical and horizontal spacing. */
   padding: 13px;
+
+  /* Reason: Adds 22px space above the button. */
   margin-top: 22px;
+
+  /* Reason: Gives the button a blue background. */
   background: #2563eb;
+
+  /* Reason: Changes the button text color to white. */
   color: white;
+
+  /* Reason: Removes the default button border. */
   border: none;
+
+  /* Reason: Rounds the button corners by 7px. */
   border-radius: 7px;
+
+  /* Reason: Sets the button text size to 16 pixels. */
   font-size: 16px;
+
+  /* Reason: Makes the button text bold. */
   font-weight: 600;
+
+  /* Reason: Changes the mouse pointer to a hand when hovering over the button. */
   cursor: pointer;
 }
 
+
+/* ================================
+   12. BUTTON HOVER EFFECT
+   ================================ */
+
+/* Reason: Applies when the mouse pointer moves over a button. */
 button:hover {
+  /* Reason: Changes the button background to a darker blue. */
   background: #1d4ed8;
 }
 
+
+/* ================================
+   13. DISABLED BUTTON
+   ================================ */
+
+/* Reason: Selects buttons that have the disabled attribute. */
 button:disabled {
+  /* Reason: Makes the disabled button appear faded. */
   opacity: 0.6;
+
+  /* Reason: Shows a not-allowed cursor to indicate that the button cannot be clicked. */
   cursor: not-allowed;
 }
 
+
+/* ================================
+   14. RESET BUTTON
+   ================================ */
+
+/* Reason: Selects the button with the reset-button class. */
 .reset-button {
+  /* Reason: Adds 10px space above the reset button. */
   margin-top: 10px;
+
+  /* Reason: Gives the reset button a grey-blue background. */
   background: #64748b;
 }
 
+/* Reason: Applies when the mouse pointer moves over the reset button. */
 .reset-button:hover {
+  /* Reason: Changes the reset button background to a darker grey-blue. */
   background: #475569;
 }
 
+
+/* ================================
+   15. RESULT ROW AND TOTAL ROW
+   ================================ */
+
+/* Reason: Selects both normal result rows and the total price row. */
 .result-row,
 .total-row {
+  /* Reason: Uses Flexbox to arrange the row contents horizontally. */
   display: flex;
+
+  /* Reason: Places the first item at the left and the second item at the right. */
   justify-content: space-between;
+
+  /* Reason: Adds 12px space between the row contents. */
   gap: 12px;
+
+  /* Reason: Adds 13px vertical padding and removes horizontal padding. */
   padding: 13px 0;
+
+  /* Reason: Adds a light grey-blue bottom border to separate the rows. */
   border-bottom: 1px solid #e2e8f0;
 }
 
+
+/* Reason: Selects span elements inside normal result rows. */
 .result-row span {
+  /* Reason: Changes the label text to a grey-blue color. */
   color: #64748b;
 }
 
+
+/* Reason: Selects strong elements inside normal result rows. */
 .result-row strong {
+  /* Reason: Aligns the displayed result values to the right. */
   text-align: right;
 }
 
+
+/* ================================
+   16. TOTAL PRICE ROW
+   ================================ */
+
+/* Reason: Selects the total price row. */
 .total-row {
+  /* Reason: Adds 12px space above the total price row. */
   margin-top: 12px;
+
+  /* Reason: Removes the bottom border used by normal result rows. */
   border: none;
+
+  /* Reason: Highlights the total price using dark green text. */
   color: #166534;
+
+  /* Reason: Makes the total price text larger at 19 pixels. */
   font-size: 19px;
+
+  /* Reason: Makes the total price text bold. */
   font-weight: bold;
 }
 
+
+/* ================================
+   17. ERROR MESSAGE
+   ================================ */
+
+/* Reason: Selects the element displaying an error message. */
 .error-message {
+  /* Reason: Gives the error message a light red background. */
   background: #fee2e2;
+
+  /* Reason: Changes the error text to dark red. */
   color: #991b1b;
+
+  /* Reason: Adds 15px internal spacing around the error message. */
   padding: 15px;
+
+  /* Reason: Rounds the error message corners by 8px. */
   border-radius: 8px;
+
+  /* Reason: Adds 20px space below the error message. */
   margin-bottom: 20px;
+
+  /* Reason: Makes the error message span all available grid columns. */
   grid-column: 1 / -1;
 }
 
+
+/* ================================
+   18. FOOTER
+   ================================ */
+
+/* Reason: Selects the footer section of the application. */
 footer {
+  /* Reason: Aligns the footer text to the center. */
   text-align: center;
+
+  /* Reason: Adds 25px internal spacing around the footer content. */
   padding: 25px;
+
+  /* Reason: Changes the footer text to grey-blue. */
   color: #64748b;
 }
 
+
+/* ================================
+   19. RESPONSIVE DESIGN
+   ================================ */
+
+/* Reason: Applies these styles only when the browser screen width is 500px or less. */
 @media (max-width: 500px) {
+
+  /* Reason: Selects the main heading inside the header on small screens. */
   .header h1 {
+    /* Reason: Reduces the heading size to 24px to fit smaller screens. */
     font-size: 24px;
   }
 
+  /* Reason: Selects the dimension input container on small screens. */
   .dimension-grid {
+    /* Reason: Changes the three-column layout into a single-column layout. */
     grid-template-columns: 1fr;
   }
 }
